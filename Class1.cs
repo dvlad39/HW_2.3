@@ -32,7 +32,7 @@ namespace ClassesDemo
             {
                 var now = DateTime.Now;
 
-                if (now.DayOfYear > Birthday.DayOfYear)
+                if (now.DayOfYear >= Birthday.DayOfYear)
                     return now.Year - Birthday.Year;
                 else
                     return now.Year - Birthday.Year - 1;
